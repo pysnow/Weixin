@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:background="#fffeff">
+
+    <ImageView
+        android:id="@+id/welcome_bg"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/welcome_bg" />
+
+    <ImageView
+        android:id="@+id/welcome_earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome_earth"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/welcome_people"
+        android:layout_marginBottom="212px"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@id/welcome_people"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/welcome_people"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/welcome_logo_ch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="186px"
+        android:layout_height="73px"
+        android:textColor="#ffffff"
+        android:text="@string/login_text"
+        android:background="@drawable/login_custom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="30px"
+        android:onClick="startLoginActivity"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="186px"
+        android:layout_height="73px"
+        android:text="@string/register_text"
+        android:background="@drawable/register_custom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="30px"
+        android:onClick="startRegisterActivity"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#f1f5fa"
+        android:text="@string/language_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="25px"
+        android:onClick="startLanguageActivity"/>
+
+</RelativeLayout>
